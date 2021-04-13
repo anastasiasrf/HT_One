@@ -17,6 +17,11 @@ a:link {
   text-decoration: none;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* Hamburger Menü anfang*/
 
 nav, .navbar-toggle {
@@ -79,7 +84,7 @@ nav ul li a:hover {
 
 .navbar-toggle {
   position: fixed;
-  top: 20px;
+  top: 85px;
   right: 20px;
   width: 45px;
   height: 45px;
@@ -118,18 +123,64 @@ nav ul li a:hover {
 .wrapper {
   padding: 0 5%;
 }
-/* Header Section in Home anfang*/
+
 .header {
+  height: 11vh;
+  background-color: white;
+  border: solid;
+  display: flex;
+  padding: 0 0;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Herbtie Parallaxe Section in Home anfang*/
+.herbtiepara {
 height: 100vh;
 display: flex;
-padding: 0 4%;
+padding: 0 0;
 align-items: center;
 justify-content: center;
 }
+/* Herbtie Parallaxe Section in Home ende*/
 
+.bd-grid{
+  border: solid;
+  border-color: white;
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-/* Header Section in Home ende*/
+/*.home__container{
+  height: calc(100vh - var(--header-height));
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 1.5rem;
+}*/
 
+.home__img{
+  position: relative;
+  padding-top: 50rem;
+  justify-self: center;
+  width: 1366px;
+  height: 233px;
+}
+
+.home__img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*.home__img img img_herbtie_hanf_blatt_right.png{
+  position: absolute;
+  left: 0;
+}*/
 
 /* Hanfgenuss Section in Home anfang*/
 
@@ -287,4 +338,14 @@ border-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+marquee{
+  border: solid;
+  padding: 5px 0;
+  color: #000;
+  font-family: curve,serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20pt;
 }
