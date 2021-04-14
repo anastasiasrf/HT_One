@@ -36,7 +36,7 @@ nav, .navbar-toggle {
 nav {
   position: fixed;
   z-index: 10;
-  background-image: linear-gradient(to top, #ffd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(to top, #576f2d 0%, #f0e9dc 100%);
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -57,17 +57,13 @@ nav ul li {
   list-style: none;
 }
 
-/*nav ul li a {
-  text-decoration: none;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-}*/
+nav ul li a {
+  color: #000000;
+}
 
 nav ul li a:hover {
   background-size: 100% 88%;
+  color: #576f2d;
 }
 
 .schrift_nav {
@@ -76,10 +72,10 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #007bff;
-  font-family: curve,serif;
-  font-weight: 700;
-  font-style: italic;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 80pt;
 }
 
 .navbar-toggle {
@@ -96,12 +92,12 @@ nav ul li a:hover {
   width: 100%;
   height: 3px;
   margin-bottom: 10px;
-  background-color: #007bff;
+  background-color: #000000;
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-on .bar1, .navbar-on .bar2, .navbar-on .bar3 {
-  background-color: #007bff;
+  background-color: #000000;
 }
 
 .navbar-on .bar1 {
@@ -124,16 +120,72 @@ nav ul li a:hover {
   padding: 0 5%;
 }
 
+/* Logo */
 .header {
   height: 11vh;
-  background-color: white;
-  border: solid;
   display: flex;
-  padding: 0 0;
+  /*padding: 0 0;*/
+  padding-top: 2rem;
   align-items: center;
   justify-content: center;
 
 }
+
+
+/* Scroll Schrift anfang */
+.marquee {
+  background-color: #576f2d;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 20s linear infinite;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20pt;
+  color: #f0e9dc;
+}
+
+.marquee span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: 2.0s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: 4.0s;
+}
+.marquee span:nth-child(4) {
+  animation-delay: 6.0s;
+}
+.marquee span:nth-child(5) {
+  animation-delay: 8.0s;
+}
+.marquee span:nth-child(6) {
+  animation-delay: 10.0s;
+}
+.marquee span:nth-child(7) {
+  animation-delay: 12.0s;
+}
+.marquee span:nth-child(8) {
+  animation-delay: 14.0s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+
+/* Scroll Schrift ende */
+
+
 
 /* Herbtie Parallaxe Section in Home anfang*/
 .herbtiepara {
@@ -167,8 +219,8 @@ justify-content: center;
   position: relative;
   padding-top: 50rem;
   justify-self: center;
-  width: 1366px;
-  height: 233px;
+  width: 1280px;
+  /*height: 233px;*/
 }
 
 .home__img img{
@@ -185,43 +237,36 @@ justify-content: center;
 /* Hanfgenuss Section in Home anfang*/
 
 .hanfgenuss {
-  height: 80vh;
+  height: 30vh;
   display: flex;
-  padding: 0 4%;
-  align-items: center;
-  justify-content: center;
+  padding: 0 0;
+  border: solid;
+  border-color: green;
 }
 
 .hanfgenuss .container-fluid div{
 border: 2px solid;
-border-color: #ffffff;
+border-color: #e7c83f;
+padding: 0 0;
 }
 
-.container-fluid {
-  border: 2px solid;
-  border-color: pink;
-}
 
 .content {
-  /*position: absolute;
-  top: 50%;
-  left: 25%;*/
-  /*-webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);*/
-  height: 160px;
+  padding: 0 0;
+  height: 15rem;
   overflow: hidden;
   font-family: curve,serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 35px;
-  line-height: 40px;
-  color: #ecf0f1;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000000;
 }
 .content__container {
   font-weight: 600;
   overflow: hidden;
-  height: 40px;
-  padding: 0 40px;
+  height: 80px;
+  padding: 0 80px;
 }
 
 .content__cocktainer {
@@ -230,16 +275,26 @@ border-color: #ffffff;
   top: 40%;
   right: 50%;*/
   float: right;
-  margin: 0 500px 0 0;
+  margin: 0 310px 0 0;
   height: 160px;
   overflow: hidden;
   font-family: curve,serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 35px;
-  line-height: 40px;
-  color: #ecf0f1;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000000;
   /*margin-top: 50px;*/
+}
+
+.content__schweiz {
+  float: left;
+  margin: 1rem 0 0 2rem;
+  font-family: curve,serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 60px;
+  color: #000000;
 }
 
 .content__container__list {
@@ -260,7 +315,7 @@ border-color: #ffffff;
   animation-iteration-count: infinite;
 }
 .content__container__list__item {
-  line-height: 40px;
+  line-height: 80px;
   margin: 50;
 }
 
@@ -333,19 +388,16 @@ border-color: #ffffff;
   }
 }
 
-.about {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.produkt {
+  height: 100%;
+  width: 100%;
 }
 
-marquee{
-  border: solid;
-  padding: 5px 0;
-  color: #000;
-  font-family: curve,serif;
-  font-weight: 700;
-  font-style: italic;
+.produkt_text {
+  padding: 50% 5%;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 20pt;
+  color: #000000;
 }
