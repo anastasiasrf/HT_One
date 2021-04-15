@@ -9,8 +9,15 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);
-  background-repeat: no-repeat
+  /*background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);
+  background-repeat: no-repeat*/
+  background-image: url("/Users/anastasia/github/HT_One/img/img_herbtie_papier_hg.jpg"); /* The image used */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 }
 
 a:link {
@@ -122,7 +129,7 @@ nav ul li a:hover {
 
 /* Logo */
 .header {
-  height: 11vh;
+  height: 11%;
   display: flex;
   /*padding: 0 0;*/
   padding-top: 2rem;
@@ -217,7 +224,7 @@ justify-content: center;
 
 .home__img{
   position: relative;
-  padding-top: 50rem;
+  padding-top: 40rem;
   justify-self: center;
   width: 1280px;
   /*height: 233px;*/
@@ -237,7 +244,7 @@ justify-content: center;
 /* Hanfgenuss Section in Home anfang*/
 
 .hanfgenuss {
-  height: 30vh;
+  height: 30%;
   display: flex;
   padding: 0 0;
   border: solid;
@@ -252,9 +259,9 @@ padding: 0 0;
 
 
 .content {
-  padding: 0 0;
+  /*padding: 0 0;
   height: 15rem;
-  overflow: hidden;
+  overflow: hidden;*/
   font-family: curve,serif;
   font-weight: 700;
   font-style: italic;
@@ -399,5 +406,53 @@ padding: 0 0;
   font-weight: 500;
   font-style: normal;
   font-size: 20pt;
+  color: #000000;
+}
+
+.footer {
+height: 10%;
+background-color: #576f2d;
+width: 100%;
+}
+
+.footer img {
+  margin: 15px 10px 0 20px;
+}
+
+.footer_text {
+  margin: 25px 0;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10pt;
+  color: #f0e9dc;
+}
+
+.footer a {
+  color: #f0e9dc;
+
+}
+
+.kontakt {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.kontakt p{
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20pt;
+  color: #000000;
+}
+
+.kontakt h1{
+  font-family: termina, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50pt;
   color: #000000;
 }
