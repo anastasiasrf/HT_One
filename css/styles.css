@@ -224,7 +224,7 @@ justify-content: center;
 
 .home__img{
   position: relative;
-  padding-top: 40rem;
+  padding-top: 50rem;
   justify-self: center;
   width: 1280px;
   /*height: 233px;*/
@@ -244,7 +244,7 @@ justify-content: center;
 /* Hanfgenuss Section in Home anfang*/
 
 .hanfgenuss {
-  height: 30%;
+  height: 30vh;
   display: flex;
   padding: 0 0;
   border: solid;
@@ -282,9 +282,8 @@ padding: 0 0;
   top: 40%;
   right: 50%;*/
   float: right;
-  margin: 0 310px 0 0;
-  height: 160px;
-  overflow: hidden;
+  margin: -80px 310px 0 0;
+  /*height: 160px;*/
   font-family: curve,serif;
   font-weight: 700;
   font-style: italic;
@@ -455,4 +454,282 @@ width: 100%;
   font-style: normal;
   font-size: 50pt;
   color: #000000;
+}
+
+/* Media Queries ab hier */
+
+@media (max-width: 479px) {
+
+/* NAV */
+
+.schrift_nav {
+  padding-top: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50pt;
+}
+
+/* NAV ende */
+
+  /* Text Scroll */
+
+  .marquee {
+    background-color: #576f2d;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .marquee span {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 100%;
+    animation: marquee 20s linear infinite;
+    font-family: termina,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #f0e9dc;
+  }
+
+  .marquee span:nth-child(1) {
+    animation-delay: 3.0s;
+  }
+  .marquee span:nth-child(2) {
+    animation-delay: 3.5s;
+  }
+  .marquee span:nth-child(3) {
+    animation-delay: 4.0s;
+  }
+  .marquee span:nth-child(4) {
+    animation-delay: 5.0s;
+  }
+  .marquee span:nth-child(5) {
+    animation-delay: 6.0s;
+  }
+  .marquee span:nth-child(6) {
+    animation-delay: 7.0s;
+  }
+  .marquee span:nth-child(7) {
+    animation-delay: 8.0s;
+  }
+  .marquee span:nth-child(8) {
+    animation-delay: 8.5s;
+  }
+
+  @keyframes marquee {
+    0%   { left: 100%; }
+    100% { left: -100%; }
+  }
+
+  /* Text Scroll ende */
+
+  /* Herbtie Parallaxe Section in Home anfang*/
+  .herbtiepara {
+  height: 80vh;
+  display: flex;
+  padding: 0 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+
+  .home__img{
+    /*padding-top: 50rem;*/
+    justify-self: center;
+    width: 1024px;
+    /*height: 233px;*/
+  }
+
+  .home__img img{
+    position: absolute;
+    top: 6rem;
+    left: 0;
+  }
+
+  /*Hanf Parallaxe ende*/
+
+
+  /* Hanfgenuss */
+
+  .hanfgenuss {
+    height: 30vh;
+    display: flex;
+    padding: 0 0;
+    margin: -3rem 0;
+    border: solid;
+    border-color: green;
+  }
+
+  .hanfgenuss .container-fluid div{
+  border: 2px solid;
+  border-color: #e7c83f;
+  padding: 0 0;
+  }
+
+
+  .content {
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 80px;
+    color: #000000;
+  }
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 80px;
+  }
+
+  .content__cocktainer {
+    float: right;
+    margin: -1.5rem 4rem 0 0;
+    /*height: 160px;*/
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 80px;
+    color: #000000;
+  }
+
+  .content__schweiz {
+    float: left;
+    margin: -3rem 0 0 0.5rem;
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
+    color: #000000;
+  }
+
+  .content__container__list {
+    float: left;
+    padding-left: 1rem;
+    text-align: left;
+    list-style: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  /*Hanfgenuss*/
+
+  /*Produkt Migros*/
+
+  .produkt_text {
+    padding: 0 0 6rem 1rem;
+    font-family: termina,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20pt;
+    color: #000000;
+  }
+
+  .produkt_text img{
+    width: 15rem;
+  }
+
+  /*Produkt Migros ende*/
+
+  /* footer */
+
+  .footer img {
+    margin: 1rem 0rem 0 1rem;
+    width: 2rem;
+  }
+
+  .footer_text {
+    margin: 25px 0;
+    font-family: termina,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10pt;
+    color: #f0e9dc;
+  }
+
+  /* footer ende */
+}
+
+@media (max-width: 768px) {
+
+  /* Hanfgenuss */
+
+  .hanfgenuss {
+    height: 30vh;
+    display: flex;
+    padding: 0 0;
+    margin: -3rem 0;
+    border: solid;
+    border-color: green;
+  }
+
+  .hanfgenuss .container-fluid div{
+  border: 2px solid;
+  border-color: #e7c83f;
+  padding: 0 0;
+  }
+
+
+  .content {
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 80px;
+    color: #000000;
+  }
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 80px;
+  }
+
+  .content__cocktainer {
+    float: right;
+    margin: -1.5rem 6.5rem 0 0;
+    /*height: 160px;*/
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 80px;
+    color: #000000;
+  }
+
+  .content__schweiz {
+    float: left;
+    margin: -3rem 0 0 0.5rem;
+    font-family: curve,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: #000000;
+  }
+
+  .content__container__list {
+    float: left;
+    padding-left: 1rem;
+    text-align: left;
+    list-style: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  /*Hanfgenuss*/
+
 }
