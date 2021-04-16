@@ -9,13 +9,12 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  /*background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);
-  background-repeat: no-repeat*/
-  background-image: url("/Users/anastasia/github/HT_One/img/img_herbtie_papier_hg.jpg"); /* The image used */
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);
+  background-repeat: no-repeat
+  /*background-image: url("/Users/anastasia/github/HT_One/img/img_herbtie_papier_hg.jpg"); /* The image used */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover;*/
 
 }
 }
