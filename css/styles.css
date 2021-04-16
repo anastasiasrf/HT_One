@@ -434,6 +434,38 @@ width: 100%;
   color: #000000;
 }
 
+.impressum_adresse {
+  display: flex;
+  padding: 5rem 5rem 0 5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: termina, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10pt;
+  color: #000000;
+}
+
+.impressum_adresse h2{
+  font-size: 15pt;
+}
+
+.impressum_adresse h3{
+  font-size: 12pt;
+}
+
+.impressum {
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: termina, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10pt;
+  color: #000000;
+}
+
 /* Media Queries ab hier */
 
 @media (min-width: 476px) {
