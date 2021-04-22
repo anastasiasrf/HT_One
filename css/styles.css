@@ -801,7 +801,7 @@ width: 100%;
 
     .content__cocktainer {
       float: left;
-      margin: -0.5rem 0 0 2rem;
+      margin: -0.5rem 0 0 2.3rem;
       /*height: 160px;*/
       font-family: curve,serif;
       font-weight: 700;
@@ -813,7 +813,7 @@ width: 100%;
 
     .content__schweiz {
       float: left;
-      margin: -2rem 0 0 2rem;
+      margin: -2rem 0 0 2.3rem;
       font-family: curve,serif;
       font-weight: 700;
       font-style: italic;
@@ -989,7 +989,7 @@ width: 100%;
 
     .content__cocktainer {
       float: left;
-      margin: -0.5rem 0 0 2rem;
+      margin: -0.5rem 0 0 2.3rem;
       /*height: 40px;*/
       font-family: curve,serif;
       font-weight: 700;
@@ -1001,7 +1001,7 @@ width: 100%;
 
     .content__schweiz {
       float: left;
-      margin: -0.5rem 0 0 2rem;
+      margin: -1.8rem 0 0 2.3rem;
       font-family: curve,serif;
       font-weight: 700;
       font-style: italic;
@@ -1167,7 +1167,7 @@ width: 100%;
 
     .content__cocktainer {
       float: left;
-      margin: 0rem 4rem 0 2rem;
+      margin: 0rem 4rem 0 2.3rem;
       /*height: 40px;*/
       font-family: curve,serif;
       font-weight: 700;
@@ -1179,7 +1179,7 @@ width: 100%;
 
     .content__schweiz {
       float: left;
-      margin: 0rem 0 0 2rem;
+      margin: -1rem 0 0 2.3rem;
       font-family: curve,serif;
       font-weight: 700;
       font-style: italic;
@@ -1349,7 +1349,7 @@ width: 100%;
     .content__cocktainer {
       float: left;
       width: 80%;
-      margin: 0 0 0 1rem;
+      margin: 0 0 0 2.3rem;
       /*height: 40px;*/
       font-family: curve,serif;
       font-weight: 700;
@@ -1361,7 +1361,7 @@ width: 100%;
 
     .content__schweiz {
       float: left;
-      margin: 0 0 0 1rem;
+      margin: -1rem 0 0 2.3rem;
       font-family: curve,serif;
       font-weight: 700;
       font-style: italic;
