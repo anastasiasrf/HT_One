@@ -9,8 +9,10 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);
-  background-repeat: no-repeat
+  /*background-image: linear-gradient(to top, #b7c19f 0%, #dddbcb 100%);*/
+  background-image: url(../img/img_herbtie_papier_hg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
